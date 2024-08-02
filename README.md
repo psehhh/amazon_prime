@@ -1,1 +1,1 @@
-# project
+This project visualizes Amazon Prime Video data using Power BI. Leveraging a dataset from Kaggle, I created various charts and visualizations to explore trends and insights in Prime Video's content library. The interactive dashboard showcases metrics such as genre distribution, release years, content ratings, and regional offerings through a mix of charts, graphs, and other visual elements.
