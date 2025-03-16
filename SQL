@@ -1,0 +1,31 @@
+SQL COMMANDS USED-
+
+1.Sorting and Filtering Data :
+  SELECT title, genre, release_year, imdb_rating 
+  FROM amazon_prime_video
+  ORDER BY release_year ASC;
+
+2.Identifying Most Popular Genres :
+  SELECT genre, COUNT(*) AS total_titles 
+  FROM amazon_prime_video
+  GROUP BY genre
+  ORDER BY total_titles DESC
+  LIMIT 5;
+
+3.Finding Longest Duration Titles :
+  SELECT title, duration, genre
+  FROM amazon_prime_video
+  ORDER BY CAST(duration AS SIGNED) DESC
+  LIMIT 10;
+
+4.Counting Titles Released Per Year :
+  SELECT release_year, COUNT(*) AS total_titles
+  FROM amazon_prime_video
+  GROUP BY release_year
+  ORDER BY total_titles DESC;
+
+5.Get Oldest Movies/Shows :
+  SELECT title, genre, release_year, imdb_rating 
+  FROM amazon_prime_video
+  ORDER BY release_year ASC
+  LIMIT 10;
